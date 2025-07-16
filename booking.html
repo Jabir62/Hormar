@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Booking | Jamhuriya University Final Project</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/png" href="favicon.png" />
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery & Data</a></li>
+        <li><a href="booking.html">Booking</a></li>
+        <li><a href="help.html">Help</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main-flex">
+    <section class="booking-section">
+      <h1>Guest Booking</h1>
+      <form>
+        <fieldset>
+          <legend>Booking Form</legend>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required placeholder="Your full name" />
+
+          <label for="major">Major:</label>
+          <select id="major" name="major" required>
+            <option value="">Select Major</option>
+            <option value="IT">IT</option>
+            <option value="Engineering">Engineering</option>
+            <option value="Business">Business</option>
+          </select>
+
+          <label>Gender:</label>
+          <label><input type="radio" name="gender" value="Male" required /> Male</label>
+          <label><input type="radio" name="gender" value="Female" required /> Female</label>
+
+          <label>Hobbies:</label>
+          <label><input type="checkbox" name="hobbies" value="Reading" /> Reading</label>
+          <label><input type="checkbox" name="hobbies" value="Coding" /> Coding</label>
+          <label><input type="checkbox" name="hobbies" value="Sports" /> Sports</label>
+
+          <label for="comments">Comments:</label>
+          <textarea id="comments" name="comments" rows="4" placeholder="Your message..." required></textarea>
+
+          <button type="submit">Submit</button>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Jamhuriya University of Science & Technology | Faculty of Computer & IT</p>
+  </footer>
+</body>
+</html>
